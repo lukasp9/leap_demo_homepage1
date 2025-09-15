@@ -7,21 +7,24 @@ const investmentCategories = [
     icon: PiggyBank,
     description: 'Penzijní připojištění a fondy',
     category: 'investice',
-    subcategory: 'penzijko'
+    subcategory: 'penzijko',
+    gradient: 'from-rose-500 to-pink-500'
   },
   {
     title: 'PODÍLOVÉ FONDY',
     icon: TrendingUp,
     description: 'Investiční a podílové fondy',
     category: 'investice',
-    subcategory: 'podilove'
+    subcategory: 'podilove',
+    gradient: 'from-violet-500 to-purple-500'
   },
   {
     title: 'NEMOVITOSTNÍ FONDY',
     icon: Building,
     description: 'Investice do nemovitostí',
     category: 'investice',
-    subcategory: 'nemovitostni'
+    subcategory: 'nemovitostni',
+    gradient: 'from-slate-500 to-zinc-600'
   }
 ];
 
@@ -44,6 +47,7 @@ export default function InvestmentsSection() {
             description={category.description}
             category={category.category}
             subcategory={category.subcategory}
+            gradient={category.gradient}
           />
         ))}
       </div>

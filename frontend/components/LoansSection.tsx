@@ -7,28 +7,32 @@ const loanCategories = [
     icon: Home,
     description: 'Úvěry na bydlení a refinancování',
     category: 'uvery',
-    subcategory: 'hypoteky'
+    subcategory: 'hypoteky',
+    gradient: 'from-indigo-500 to-blue-500'
   },
   {
     title: 'ÚVĚR NA COKOLIV',
     icon: CreditCard,
     description: 'Osobní úvěry bez účelu',
     category: 'uvery',
-    subcategory: 'cokoliv'
+    subcategory: 'cokoliv',
+    gradient: 'from-teal-500 to-green-500'
   },
   {
     title: 'KONSOLIDACE',
     icon: RefreshCw,
     description: 'Sjednocení všech úvěrů',
     category: 'uvery',
-    subcategory: 'konsolidace'
+    subcategory: 'konsolidace',
+    gradient: 'from-yellow-500 to-orange-500'
   },
   {
     title: 'PODNIKATELSKÉ',
     icon: Building2,
     description: 'Úvěry pro firmy a podnikatele',
     category: 'uvery',
-    subcategory: 'podnikatelske'
+    subcategory: 'podnikatelske',
+    gradient: 'from-gray-600 to-gray-800'
   }
 ];
 
@@ -51,6 +55,7 @@ export default function LoansSection() {
             description={category.description}
             category={category.category}
             subcategory={category.subcategory}
+            gradient={category.gradient}
           />
         ))}
       </div>

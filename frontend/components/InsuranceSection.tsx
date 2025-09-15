@@ -7,35 +7,40 @@ const insuranceCategories = [
     icon: Car,
     description: 'Povinné ručení a havarijní pojištění',
     category: 'pojisteni',
-    subcategory: 'auto'
+    subcategory: 'auto',
+    gradient: 'from-blue-500 to-cyan-500'
   },
   {
     title: 'MAJETEK',
     icon: Home,
     description: 'Pojištění domů, bytů a domácností',
     category: 'pojisteni',
-    subcategory: 'majetek'
+    subcategory: 'majetek',
+    gradient: 'from-green-500 to-emerald-500'
   },
   {
     title: 'ŽIVOT',
     icon: Heart,
     description: 'Životní a úrazové pojištění',
     category: 'pojisteni',
-    subcategory: 'zivot'
+    subcategory: 'zivot',
+    gradient: 'from-red-500 to-pink-500'
   },
   {
     title: 'MAZLÍČCI',
     icon: PawPrint,
     description: 'Pojištění domácích mazlíčků',
     category: 'pojisteni',
-    subcategory: 'mazlicek'
+    subcategory: 'mazlicek',
+    gradient: 'from-orange-500 to-amber-500'
   },
   {
     title: 'CESTOVNÍ',
     icon: Plane,
     description: 'Pojištění pro cesty do zahraničí',
     category: 'pojisteni',
-    subcategory: 'cestovni'
+    subcategory: 'cestovni',
+    gradient: 'from-purple-500 to-violet-500'
   }
 ];
 
@@ -58,6 +63,7 @@ export default function InsuranceSection() {
             description={category.description}
             category={category.category}
             subcategory={category.subcategory}
+            gradient={category.gradient}
           />
         ))}
       </div>
